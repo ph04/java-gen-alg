@@ -1,14 +1,11 @@
 public class Main {
     public static void main(String[] argv) {
-        Obstacle obstacle1 = new Obstacle(40, 40, 60, 60);
+        Population population = new Population(20, "pisellone");
 
-        Obstacle[] obstacles = new Obstacle[]{obstacle1};
+        population.generations(10);
 
-        Goal goal = new Goal(30, 30);
+        Member bestMember = population.getBestMember();
 
-        Window window = new Window("Genetic Algorithm", 500, 500, obstacles, goal, 40);
-
-        // window.draw();
-        window.run();
+        System.out.println(bestMember);
     }
 }
