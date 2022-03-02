@@ -1,2 +1,2 @@
 # java-gen-alg
-A Java genetic algorithm visualization.
+A Java genetic algorithm.
