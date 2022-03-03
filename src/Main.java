@@ -1,13 +1,9 @@
 public class Main {
     public static void main(String[] argv) {
-        Population population = new Population(10, "pisellone");
+        Population population = new Population(100, "ho il pisello veramente minuscolo", 0.05);
 
-        population.generations(10);
+        System.out.println(population.runGenerations(true));
 
-        Member bestMember = population.getBestMember();
-
-        // System.out.println(population.getMembers());
-
-        System.out.println(bestMember);
+        System.out.println(population.getBestMember());
     }
 }
